@@ -1,0 +1,31 @@
+<html>
+<head>
+</head>
+<body style="background: transparent;">
+    <script src="scripts/docstrap.lib.js"></script>
+    <script src="scripts/lunr.min.js"></script>
+    <script src="scripts/fulltext-search.js"></script>
+
+    <script type="text/x-docstrap-searchdb">
+    {"global.html":{"id":"global.html","title":"Global","body":" Utility Global createMapdeepCopy Global Methods createMap(data, objKey) Creates map {unique value data} for array of object {data} taking supplied key {objKey} into consideration. Parameters: Name Type Description data Array objKey string Returns: } map of data element with respect to specified {objKey} Type any deepCopy(target, source1, sourceN) Creates deep copy of all the passed object merging all the data into 1st parameter that is target object. Parameters: Name Type Description target * An object that will receive the new properties if additional objects are passed in. source1 * An object containing additional properties to merge in. sourceN * Additional objects containing properties to merge in. Returns: Deep copied object containing all the properties of passed parameters. Type * × Search results Close "},"index.html":{"id":"index.html","title":"Index","body":" Utility Global createMapdeepCopy Utils This utility provides basic utility functions which are mainly used in day to day coding and not ment perform various utility operations which are handled by other utility lib. Import the js files from build folder and start working. Testing Use index.html from sample for testing the utility into the console. Dependencies Licence × Search results Close "}}
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            Searcher.init();
+        });
+
+        $(window).on("message", function(msg) {
+            var msgData = msg.originalEvent.data;
+
+            if (msgData.msgid != "docstrap.quicksearch.start") {
+                return;
+            }
+
+            var results = Searcher.search(msgData.searchTerms);
+
+            window.parent.postMessage({"results": results, "msgid": "docstrap.quicksearch.done"}, "*");
+        });
+    </script>
+</body>
+</html>
