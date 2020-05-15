@@ -31,6 +31,13 @@
 		<ul class="nav navbar-nav">
 			
 			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="Logger.html">Logger</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
 				<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"></b></a>
 				<ul class="dropdown-menu ">
 					<li><a href="global.html#createMap">createMap</a></li><li><a href="global.html#deepCopy">deepCopy</a></li><li><a href="global.html#getDataFromLocal">getDataFromLocal</a></li><li><a href="global.html#getDataFromSession">getDataFromSession</a></li><li><a href="global.html#hasKey">hasKey</a></li><li><a href="global.html#isArray">isArray</a></li><li><a href="global.html#isBoolean">isBoolean</a></li><li><a href="global.html#isDefined">isDefined</a></li><li><a href="global.html#isEmptyObject">isEmptyObject</a></li><li><a href="global.html#isEqual">isEqual</a></li><li><a href="global.html#isFunction">isFunction</a></li><li><a href="global.html#isObject">isObject</a></li><li><a href="global.html#noop">noop</a></li><li><a href="global.html#removeItemFromLocal">removeItemFromLocal</a></li><li><a href="global.html#removeItemFromSession">removeItemFromSession</a></li><li><a href="global.html#setDataToLocal">setDataToLocal</a></li><li><a href="global.html#setDataToSession">setDataToSession</a></li>
@@ -137,130 +144,6 @@
 
     
 
-    
-        <h3 class="subsection-title">Members</h3>
-
-        <dl>
-            
-<hr>
-<dt class="name" id="isEqual">
-    <h4 id="isEqual"><span class="type-signature">&lt;constant> </span>isEqual<span class="type-signature"></span></h4>
-
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>Compares two parameter of same type and returns true if equal.</p>
-    </div>
-    
-
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt class="name" id="noop">
-    <h4 id="noop"><span class="type-signature">&lt;constant> </span>noop<span class="type-signature"></span></h4>
-
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        <p>noop</p>
-    </div>
-    
-
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-</dd>
-
-        </dl>
     
 
     
@@ -1735,6 +1618,182 @@ value is specific element.</p>
             
 <hr>
 <dt>
+    <h4 class="name" id="isEqual"><span class="type-signature"></span>isEqual(param1, param2)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Compares two parameter of same type and returns true if equal.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>param1</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Parameter 1</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>param2</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Parameter 2</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>true if both parameter are equal</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
     <h4 class="name" id="isFunction"><span class="type-signature"></span>isFunction(param)</h4>
     
     
@@ -2023,6 +2082,158 @@ value is specific element.</p>
     <dd>
         
 <span class="param-type">boolean</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="noop"><span class="type-signature"></span>noop(value)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>noop</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>accepts anyumber of arguments.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>return undefined</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">void</span>
 
 
 
@@ -2727,9 +2938,9 @@ value is specific element.</p>
 	</span>
 
 <span class="jsdoc-message">
-	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a>
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.4</a>
 	
-		on April 25th 2020, 1:39:22 pm
+		on May 15th 2020, 9:50:54 pm
 	
 	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
 </span>
